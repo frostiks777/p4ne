@@ -64,7 +64,6 @@ if __name__ == '__main__':
             if i[0] == hostname:
                 for j in i:
                     if j != hostname:
-                        # print(j)
                         ls +=j + '<br>'
         ls += '<hr><a href="' + url_for("configs") + '">Go to configs</a>'
         return ls
