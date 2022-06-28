@@ -1,9 +1,9 @@
-import paramiko
-import time
+# import paramiko
+# import time
 import ssl
 import requests
-import pprint
-import urllib3
+# import pprint
+# import urllib3
 
 from urllib3.poolmanager import PoolManager
 from requests.adapters import HTTPAdapter
