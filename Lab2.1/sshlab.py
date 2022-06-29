@@ -1,4 +1,5 @@
-import paramiko, time
+import paramiko
+import time
 import re
 
 BUF_SIZE = 20000
@@ -39,7 +40,9 @@ for strr in s.splitlines():
         lraw.append(m.group(1))
     if len(lraw) > 0:
         lint.append(lraw)
-print(lint)
-#print(s)
+
+for i in lint:
+    print(i)
+    print("*"*15)
 
 session.close()
