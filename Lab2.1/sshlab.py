@@ -1,6 +1,7 @@
 import paramiko
 import time
 import re
+from pprint import pprint
 
 BUF_SIZE = 20000
 TIMEOUT = 1
@@ -42,7 +43,6 @@ for strr in s.splitlines():
         lint.append(lraw)
 
 for i in lint:
-    print(i)
-    print("*"*15)
+    pprint(i)
 
 session.close()
